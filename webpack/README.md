@@ -48,7 +48,7 @@ module.exports = {
 
 - Instalación: `npm install --save-dev --save-exact css-loader`
 - Después instalamos otro loader: `npm install --save-dev --save-exact style-loader` para inyectar una etiqueta style dentro de nuestro html
-  Despues nuestro `webpack.config.js` lo dejaríamos algo así:
+- Despues nuestro `webpack.config.js` lo dejaríamos algo así:
 
 ```js
 const path = require('path')
@@ -138,3 +138,10 @@ module.exports = {
 - Instalación de plugin extra de Babel para transpilación de Javascript moderno: `npm install --save-dev --save-exact @babel/plugin-transform-runtime`
 - Instalación de runtime de Babel (no como dependencia de desarrollo): `npm install --save --save-exact @babel/runtime`
 - Incluimos el plugin en `.babelrc`
+
+## Estilos con preprocesadores
+
+- Instalación: `npm install sass-loader stylus-loader less-loader postcss-loader --save-dev --save-exact`
+- Antes de configurar los preprocesadores en webpack necesitas tenerlos previamente instalado en tu equipo, tenerlos en tus Peer dependencies. Instalación: `npm install sass stylus less --save-dev --save-exact`
+- Después creamos el script en el `package.json`. Ejemplo: `"build:prepro": "webpack serve --config ./prepro/webpack.config.js"`
+- Despues añadimos nuestros loader al archivo `webpack.config.js`

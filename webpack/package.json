@@ -11,7 +11,8 @@
     "build:css-style-loader": "webpack --config ./css-style-loader/webpack.config.js",
     "build:plugins": "webpack --config ./plugins/webpack.config.js",
     "build:dev": "webpack serve --config ./webpack-dev-server/webpack.config.js",
-    "build:babel": "webpack serve --config ./babel/webpack.config.js"
+    "build:babel": "webpack serve --config ./babel/webpack.config.js",
+    "build:prepro": "webpack serve --config ./prepro/webpack.config.js"
   },
   "keywords": [
     "webpack"
@@ -25,8 +26,15 @@
     "babel-loader": "8.2.2",
     "css-loader": "5.0.1",
     "html-webpack-plugin": "4.5.1",
+    "less": "4.1.1",
+    "less-loader": "7.3.0",
     "mini-css-extract-plugin": "1.3.3",
+    "postcss-loader": "4.2.0",
+    "sass": "1.32.5",
+    "sass-loader": "10.1.1",
     "style-loader": "2.0.0",
+    "stylus": "0.54.8",
+    "stylus-loader": "4.3.3",
     "webpack": "5.11.0",
     "webpack-cli": "4.3.0",
     "webpack-dev-server": "3.11.1"
